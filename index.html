@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeHub - Food Recipe App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar">
+
+    <a href="#" class="logo" onclick="showPage('home')">
+        Recipe<span>Hub</span>
+    </a>
+
+    <div class="nav-links">
+
+        <a href="#" onclick="showPage('home')">
+            Home
+        </a>
+
+        <a href="#" onclick="showPage('recipes')">
+            Recipes
+        </a>
+
+        <a href="#" onclick="showPage('favorites')">
+            ❤️ Favorites
+        </a>
+
+        <a href="#" onclick="showPage('share')">
+            ➕ Share Recipe
+        </a>
+
+        <a href="#" onclick="showPage('profile')">
+            👤 Profile
+        </a>
+
+        <a href="#" onclick="showPage('admin')">
+            ⚙️ Admin
+        </a>
+
+        <a href="#" onclick="showPage('login')" class="nav-btn">
+            Login
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HOME PAGE
+===================================================== -->
+
+<section id="homePage" class="app-page">
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                🍴 Welcome to RecipeHub
+            </span>
+
+            <h1>
+                Discover
+                <span>Delicious</span>
+                <br>
+                Recipes Every Day
+            </h1>
+
+            <p>
+                Explore delicious recipes, discover new flavors,
+                share your own creations and make every meal special.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="btn btn-primary"
+                    onclick="showPage('recipes')">
+                    Explore Recipes
+                </button>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="showPage('share')">
+                    Share Your Recipe
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image-wrapper">
+
+            <img
+                src="./images/briyani.jpg"
+                class="hero-image"
+                alt="Delicious Biryani">
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span class="section-badge">
+                WHY RECIPEHUB?
+            </span>
+
+            <h2>
+                Everything You Need in One Place
+            </h2>
+
+            <p>
+                Discover, cook, save and share amazing recipes.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🔎
+                </div>
+
+                <h3>Discover Recipes</h3>
+
+                <p>
+                    Find delicious recipes from different
+                    cuisines and categories.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ❤️
+                </div>
+
+                <h3>Save Favorites</h3>
+
+                <p>
+                    Save your favorite recipes and access
+                    them whenever you want.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    👩‍🍳
+                </div>
+
+                <h3>Share Recipes</h3>
+
+                <p>
+                    Anyone can share their own recipes
+                    with ingredients and preparation steps.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ⚙️
+                </div>
+
+                <h3>Admin Management</h3>
+
+                <p>
+                    Admin can add, edit and delete recipes
+                    from the dashboard.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR RECIPES -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span class="section-badge">
+                POPULAR
+            </span>
+
+            <h2>
+                Popular Recipes
+            </h2>
+
+            <p>
+                Discover what people are cooking today.
+            </p>
+
+        </div>
+
+
+        <div class="recipe-grid">
+
+            <!-- BIRYANI -->
+
+            <div class="recipe-card">
+
+                <img
+                    src="./images/briyani.jpg"
+                    alt="Chicken Biryani"
+                    class="recipe-image">
+
+                <div class="recipe-card-content">
+
+                    <span class="recipe-category">
+                        Indian
+                    </span>
+
+                    <h3>
+                        Chicken Biryani
+                    </h3>
+
+                    <p>
+                        Aromatic basmati rice cooked with
+                        spicy chicken and traditional spices.
+                    </p>
+
+                    <div class="recipe-info">
+
+                        <span>
+                            ⏱️ 60 min
+                        </span>
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        onclick="showRecipe('biryani')">
+
+                        View Recipe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PANEER -->
+
+            <div class="recipe-card">
+
+                <img
+                    src="./images/panner butter masala.avif"
+                    alt="Paneer Butter Masala"
+                    class="recipe-image">
+
+                <div class="recipe-card-content">
+
+                    <span class="recipe-category">
+                        Vegetarian
+                    </span>
+
+                    <h3>
+                        Paneer Butter Masala
+                    </h3>
+
+                    <p>
+                        Soft paneer cooked in a rich,
+                        creamy tomato gravy.
+                    </p>
+
+                    <div class="recipe-info">
+
+                        <span>
+                            ⏱️ 40 min
+                        </span>
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        onclick="showRecipe('paneer')">
+
+                        View Recipe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PIZZA -->
+
+            <div class="recipe-card">
+
+                <img
+                    src="./images/l-intro-1677441572.jpg"
+                    alt="Cheese Pizza"
+                    class="recipe-image">
+
+                <div class="recipe-card-content">
+
+                    <span class="recipe-category">
+                        Italian
+                    </span>
+
+                    <h3>
+                        Cheese Pizza
+                    </h3>
+
+                    <p>
+                        Cheesy homemade pizza with a crispy
+                        crust and delicious toppings.
+                    </p>
+
+                    <div class="recipe-info">
+
+                        <span>
+                            ⏱️ 35 min
+                        </span>
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        onclick="showRecipe('pizza')">
+
+                        View Recipe
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     RECIPES PAGE
+===================================================== -->
+
+<section id="recipesPage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span class="section-badge">
+                EXPLORE
+            </span>
+
+            <h2>
+                All Recipes
+            </h2>
+
+            <p>
+                Find your next favorite meal.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search recipes, cuisines..."
+                onkeyup="filterRecipes()">
+
+            <button
+                onclick="filterRecipes()">
+                🔍 Search
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+
+        <div class="categories">
+
+            <button
+                class="category active"
+                onclick="filterCategory('All')">
+                All
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCategory('Indian')">
+                🇮🇳 Indian
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCategory('Vegetarian')">
+                🥗 Vegetarian
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCategory('Italian')">
+                🍕 Italian
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCategory('Chinese')">
+                🥢 Chinese
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCategory('Dessert')">
+                🍰 Dessert
+            </button>
+
+            <button
+                class="category"
+                onclick="filterCategory('Snacks')">
+                🍔 Snacks
+            </button>
+
+        </div>
+
+
+        <!-- JAVASCRIPT LOADS RECIPES HERE -->
+
+        <div
+            id="recipeContainer"
+            class="recipe-grid">
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     RECIPE DETAILS PAGE
+===================================================== -->
+
+<section id="detailsPage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="recipe-details">
+
+        <button
+            class="back-btn"
+            onclick="showPage('recipes')">
+
+            ← Back to Recipes
+
+        </button>
+
+
+        <div class="details-container">
+
+            <div class="details-image">
+
+                <img
+                    id="detailImage"
+                    src=""
+                    alt="Recipe">
+
+            </div>
+
+
+            <div class="details-content">
+
+                <span
+                    id="detailCategory"
+                    class="recipe-category">
+                </span>
+
+                <h1 id="detailTitle">
+                    Recipe
+                </h1>
+
+                <div class="detail-rating">
+
+                    <span id="detailRating">
+                        ⭐ 4.8
+                    </span>
+
+                    <span id="detailTime">
+                        ⏱️ 40 min
+                    </span>
+
+                </div>
+
+
+                <p id="detailDescription">
+                    Delicious recipe description.
+                </p>
+
+
+                <!-- INGREDIENTS -->
+
+                <div class="ingredients-section">
+
+                    <h2>
+                        🥕 Ingredients
+                    </h2>
+
+                    <ul id="ingredientsList">
+                    </ul>
+
+                </div>
+
+
+                <!-- PROCESS -->
+
+                <div class="instructions-section">
+
+                    <h2>
+                        👩‍🍳 Preparation Process
+                    </h2>
+
+                    <ol id="instructionsList">
+                    </ol>
+
+                </div>
+
+
+                <button
+                    class="primary-btn"
+                    onclick="showPage('recipes')">
+
+                    ← Explore More Recipes
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     FAVORITES PAGE
+===================================================== -->
+
+<section id="favoritesPage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span class="section-badge">
+                YOUR COLLECTION
+            </span>
+
+            <h2>
+                ❤️ Favorite Recipes
+            </h2>
+
+            <p>
+                Your saved recipes are here.
+            </p>
+
+        </div>
+
+
+        <div
+            id="favoritesContainer"
+            class="recipe-grid">
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     SHARE RECIPE PAGE
+===================================================== -->
+
+<section id="sharePage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span class="section-badge">
+                COMMUNITY
+            </span>
+
+            <h2>
+                👩‍🍳 Share Your Recipe
+            </h2>
+
+            <p>
+                Anyone can share a recipe and help others learn.
+            </p>
+
+        </div>
+
+
+        <div class="share-layout">
+
+            <!-- FORM -->
+
+            <div class="share-form-card">
+
+                <h2>
+                    Create Your Recipe
+                </h2>
+
+                <p>
+                    Enter your recipe, ingredients and
+                    preparation process.
+                </p>
+
+
+                <form id="shareRecipeForm">
+
+                    <label>
+                        Recipe Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="shareRecipeName"
+                        placeholder="Example: My Special Pasta"
+                        required>
+
+
+                    <label>
+                        Category
+                    </label>
+
+                    <select
+                        id="shareRecipeCategory"
+                        required>
+
+                        <option value="">
+                            Select Category
+                        </option>
+
+                        <option value="Indian">
+                            Indian
+                        </option>
+
+                        <option value="Vegetarian">
+                            Vegetarian
+                        </option>
+
+                        <option value="Italian">
+                            Italian
+                        </option>
+
+                        <option value="Chinese">
+                            Chinese
+                        </option>
+
+                        <option value="Dessert">
+                            Dessert
+                        </option>
+
+                        <option value="Snacks">
+                            Snacks
+                        </option>
+
+                    </select>
+
+
+                    <label>
+                        Image Path
+                    </label>
+
+                    <input
+                        type="text"
+                        id="shareRecipeImage"
+                        placeholder="images"
+                        required>
+
+
+                    <label>
+                        Preparation Time
+                    </label>
+
+                    <input
+                        type="text"
+                        id="shareRecipeTime"
+                        placeholder="30 min"
+                        required>
+
+
+                    <label>
+                        Description
+                    </label>
+
+                    <textarea
+                        id="shareRecipeDescription"
+                        rows="4"
+                        placeholder="Describe your recipe..."
+                        required>
+                    </textarea>
+
+
+                    <label>
+                        Ingredients
+                    </label>
+
+                    <textarea
+                        id="shareRecipeIngredients"
+                        rows="7"
+                        placeholder="Enter one ingredient per line"
+                        required>
+                    </textarea>
+
+
+                    <label>
+                        Preparation Process
+                    </label>
+
+                    <textarea
+                        id="shareRecipeInstructions"
+                        rows="8"
+                        placeholder="Enter each cooking step on a new line"
+                        required>
+                    </textarea>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+
+                        🚀 Publish Recipe
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="share-info-card">
+
+                <div class="feature-icon">
+                    👩‍🍳
+                </div>
+
+                <h2>
+                    Cook. Share. Inspire.
+                </h2>
+
+                <p>
+                    RecipeHub is a community where users
+                    can share their own recipes with others.
+                </p>
+
+                <div class="share-points">
+
+                    <div>
+                        <span>✓</span>
+                        Add your recipe
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Add ingredients
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Explain the process
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Help others learn
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     PROFILE PAGE
+===================================================== -->
+
+<section id="profilePage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span class="section-badge">
+                MY ACCOUNT
+            </span>
+
+            <h2>
+                👤 My Profile
+            </h2>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <h2 id="profileName">
+                Recipe Lover
+            </h2>
+
+            <p id="profileEmail">
+                Login to view your email
+            </p>
+
+            <div class="profile-stats">
+
+                <div>
+                    <strong id="favoriteCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Favorites
+                    </span>
+                </div>
+
+                <div>
+                    <strong>
+                        🍴
+                    </strong>
+
+                    <span>
+                        Food Lover
+                    </span>
+                </div>
+
+            </div>
+
+
+            <button
+                class="secondary-btn"
+                onclick="logout()">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     LOGIN PAGE
+===================================================== -->
+
+<section id="loginPage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="auth-section">
+
+        <div class="auth-card">
+
+            <div class="auth-logo">
+                Recipe<span>Hub</span>
+            </div>
+
+            <h2>
+                Welcome Back 👋
+            </h2>
+
+            <p>
+                Login to continue your RecipeHub journey.
+            </p>
+
+
+            <form id="loginForm">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required>
+
+
+                <label>
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+
+                    Login
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Don't have an account?
+
+                <a
+                    href="#"
+                    onclick="showPage('signup')">
+
+                    Sign Up
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     SIGNUP PAGE
+===================================================== -->
+
+<section id="signupPage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="auth-section">
+
+        <div class="auth-card">
+
+            <div class="auth-logo">
+                Recipe<span>Hub</span>
+            </div>
+
+            <h2>
+                Create Account 🍴
+            </h2>
+
+            <p>
+                Join RecipeHub and start sharing recipes.
+            </p>
+
+
+            <form id="signupForm">
+
+                <label>
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your name"
+                    required>
+
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required>
+
+
+                <label>
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Create a password"
+                    required>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Already have an account?
+
+                <a
+                    href="#"
+                    onclick="showPage('login')">
+
+                    Login
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     ADMIN PAGE
+===================================================== -->
+
+<section id="adminPage"
+         class="app-page"
+         style="display:none;">
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <span class="section-badge">
+                ADMIN PANEL
+            </span>
+
+            <h2>
+                ⚙️ RecipeHub Admin Dashboard
+            </h2>
+
+            <p>
+                Manage recipes added to the RecipeHub application.
+            </p>
+
+        </div>
+
+
+        <!-- ADMIN STATS -->
+
+        <div class="admin-stats">
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    🍴
+                </div>
+
+                <h3 id="adminRecipeCount">
+                    0
+                </h3>
+
+                <p>
+                    Total Recipes
+                </p>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    ❤️
+                </div>
+
+                <h3 id="adminFavoriteCount">
+                    0
+                </h3>
+
+                <p>
+                    Favorites
+                </p>
+
+            </div>
+
+
+            <div class="admin-stat-card">
+
+                <div class="admin-stat-icon">
+                    👤
+                </div>
+
+                <h3 id="adminUserCount">
+                    0
+                </h3>
+
+                <p>
+                    Registered Users
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ADD RECIPE BUTTON -->
+
+        <div class="admin-header">
+
+            <div>
+
+                <h2>
+                    Manage Recipes
+                </h2>
+
+                <p>
+                    Add, edit or delete recipes.
+                </p>
+
+            </div>
+
+
+            <button
+                class="primary-btn"
+                onclick="openAddRecipeForm()">
+
+                ➕ Add New Recipe
+
+            </button>
+
+        </div>
+
+
+        <!-- ADMIN TABLE -->
+
+        <div
+            id="adminRecipeTable"
+            class="admin-table-container">
+
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     EDIT / ADD RECIPE MODAL
+===================================================== -->
+
+<div
+    id="recipeEditModal"
+    class="recipe-modal">
+
+    <div class="recipe-modal-content">
+
+        <button
+            class="close-modal"
+            onclick="closeRecipeForm()">
+
+            ×
+
+        </button>
+
+
+        <h2 id="recipeFormTitle">
+            Edit Recipe
+        </h2>
+
+
+        <p>
+            Admin can update recipe information here.
+        </p>
+
+
+        <form id="adminRecipeForm">
+
+            <input
+                type="hidden"
+                id="editRecipeId">
+
+
+            <label>
+                Recipe Name
+            </label>
+
+            <input
+                type="text"
+                id="editRecipeName"
+                required>
+
+
+            <label>
+                Category
+            </label>
+
+            <select
+                id="editRecipeCategory"
+                required>
+
+                <option value="Indian">
+                    Indian
+                </option>
+
+                <option value="Vegetarian">
+                    Vegetarian
+                </option>
+
+                <option value="Italian">
+                    Italian
+                </option>
+
+                <option value="Chinese">
+                    Chinese
+                </option>
+
+                <option value="Dessert">
+                    Dessert
+                </option>
+
+                <option value="Snacks">
+                    Snacks
+                </option>
+
+            </select>
+
+
+            <label>
+                Preparation Time
+            </label>
+
+            <input
+                type="text"
+                id="editRecipeTime"
+                placeholder="40 min"
+                required>
+
+
+            <label>
+                Rating
+            </label>
+
+            <input
+                type="number"
+                id="editRecipeRating"
+                min="1"
+                max="5"
+                step="0.1"
+                required>
+
+
+            <label>
+                Description
+            </label>
+
+            <textarea
+                id="editRecipeDescription"
+                rows="4"
+                required>
+            </textarea>
+
+
+            <label>
+                Ingredients
+            </label>
+
+            <textarea
+                id="editRecipeIngredients"
+                rows="6"
+                placeholder="Enter each ingredient on a new line"
+                required>
+            </textarea>
+
+
+            <label>
+                Preparation Process
+            </label>
+
+            <textarea
+                id="editRecipeInstructions"
+                rows="7"
+                placeholder="Enter each step on a new line"
+                required>
+            </textarea>
+
+
+            <label>
+                Image Path
+            </label>
+
+            <input
+                type="text"
+                id="editRecipeImage"
+                placeholder="images/biryani.jpg"
+                required>
+
+
+            <div class="form-buttons">
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+
+                    💾 Save Recipe
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    onclick="closeRecipeForm()">
+
+                    Cancel
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2>
+                Recipe<span>Hub</span>
+            </h2>
+
+            <p>
+                Discover. Cook. Share.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                © 2026 RecipeHub
+            </p>
+
+            <p>
+                Made with ❤️ for food lovers
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

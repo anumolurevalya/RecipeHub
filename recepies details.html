@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeHub - Recipe Details</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <a href="home.html" class="logo">
+        Recipe<span>Hub</span>
+    </a>
+
+    <div class="nav-links">
+
+        <a href="home.html">Home</a>
+
+        <a href="recipes.html">Recipes</a>
+
+        <a href="favorites.html">Favorites ❤️</a>
+
+        <a href="profile.html">Profile 👤</a>
+
+    </div>
+
+</nav>
+
+
+<section class="recipe-details">
+
+    <div class="details-container">
+
+        <img id="recipeImage"
+             class="details-image"
+             src="images/biryani.jpg"
+             alt="Recipe">
+
+        <div class="details-content">
+
+            <h1 id="recipeTitle">
+                Chicken Biryani
+            </h1>
+
+            <p id="recipeDescription">
+                A delicious and aromatic Indian rice dish
+                prepared with flavorful spices and tender
+                chicken.
+            </p>
+
+            <div class="recipe-meta">
+
+                <span>⏱ 60 minutes</span>
+
+                <span class="rating">
+                    ⭐ 4.8
+                </span>
+
+            </div>
+
+
+            <button class="btn btn-primary"
+                    onclick="addFavorite()">
+
+                ❤️ Add to Favorites
+
+            </button>
+
+
+            <div class="ingredients">
+
+                <h2>Ingredients</h2>
+
+                <ul id="ingredientsList">
+
+                    <li>Basmati Rice</li>
+
+                    <li>Chicken</li>
+
+                    <li>Onions</li>
+
+                    <li>Tomatoes</li>
+
+                    <li>Ginger Garlic Paste</li>
+
+                    <li>Biryani Masala</li>
+
+                    <li>Fresh Coriander</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="instructions">
+
+                <h2>Instructions</h2>
+
+                <ol>
+
+                    <li>
+                        Wash and soak the basmati rice.
+                    </li>
+
+                    <li>
+                        Marinate the chicken with spices.
+                    </li>
+
+                    <li>
+                        Cook onions and spices in a pan.
+                    </li>
+
+                    <li>
+                        Add chicken and cook properly.
+                    </li>
+
+                    <li>
+                        Add rice and cook until soft.
+                    </li>
+
+                    <li>
+                        Garnish with coriander and serve hot.
+                    </li>
+
+                </ol>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeHub - Recipes</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <a href="home.html" class="logo">
+        Recipe<span>Hub</span>
+    </a>
+
+    <div class="nav-links">
+
+        <a href="home.html">Home</a>
+
+        <a href="recipes.html">Recipes</a>
+
+        <a href="favorites.html">Favorites ❤️</a>
+
+        <a href="profile.html">Profile 👤</a>
+
+    </div>
+
+</nav>
+
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>All Recipes</h2>
+
+        <p>
+            Find your next favorite meal
+        </p>
+
+    </div>
+
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="recipeSearch"
+            placeholder="Search by recipe name..."
+            onkeyup="filterRecipes()"
+        >
+
+        <button>
+            🔍 Search
+        </button>
+
+    </div>
+
+
+    <div class="categories">
+
+        <button class="category active"
+                onclick="filterCategory('all')">
+            All
+        </button>
+
+        <button class="category"
+                onclick="filterCategory('indian')">
+            Indian
+        </button>
+
+        <button class="category"
+                onclick="filterCategory('vegetarian')">
+            Vegetarian
+        </button>
+
+        <button class="category"
+                onclick="filterCategory('italian')">
+            Italian
+        </button>
+
+        <button class="category"
+                onclick="filterCategory('dessert')">
+            Dessert
+        </button>
+
+    </div>
+
+
+    <div class="recipe-grid" id="recipeGrid">
+
+        <div class="recipe-card"
+             data-category="indian">
+
+            <img src="images/biryani.jpg">
+
+            <div class="recipe-info">
+
+                <h3>Chicken Biryani</h3>
+
+                <p>Indian • Non-Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 60 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.8
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=biryani"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="recipe-card"
+             data-category="vegetarian">
+
+            <img src="images/paneer.jpg">
+
+            <div class="recipe-info">
+
+                <h3>Paneer Butter Masala</h3>
+
+                <p>Indian • Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 40 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.7
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=paneer"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="recipe-card"
+             data-category="italian">
+
+            <img src="images/pasta.jpg">
+
+            <div class="recipe-info">
+
+                <h3>Creamy Pasta</h3>
+
+                <p>Italian • Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 30 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.6
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=pasta"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="recipe-card"
+             data-category="vegetarian">
+
+            <img src="images/salad.jpg">
+
+            <div class="recipe-info">
+
+                <h3>Fresh Garden Salad</h3>
+
+                <p>Healthy • Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 15 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.5
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=salad"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="recipe-card"
+             data-category="italian">
+
+            <img src="images/pizza.jpg">
+
+            <div class="recipe-info">
+
+                <h3>Cheese Pizza</h3>
+
+                <p>Italian • Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 35 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.6
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=pizza"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="recipe-card"
+             data-category="dessert">
+
+            <img src="images/cake.jpg">
+
+            <div class="recipe-info">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>Dessert • Sweet</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 50 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.9
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=cake"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

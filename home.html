@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RecipeHub - Home</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <a href="home.html" class="logo">
+        Recipe<span>Hub</span>
+    </a>
+
+    <div class="nav-links">
+
+        <a href="home.html">Home</a>
+
+        <a href="recipes.html">Recipes</a>
+
+        <a href="favorites.html">Favorites ❤️</a>
+
+        <a href="profile.html">Profile 👤</a>
+
+    </div>
+
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            What are you
+            <span>cooking</span> today?
+        </h1>
+
+        <p>
+            Find delicious recipes and make something
+            amazing for your family and friends.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="recipes.html"
+               class="btn btn-primary">
+                Find Recipes
+            </a>
+
+        </div>
+
+    </div>
+
+    <img src="images/pasta.jpg"
+         class="hero-image"
+         alt="Pasta">
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-title">
+
+        <h2>Explore Recipes</h2>
+
+        <p>
+            Choose your favorite food and start cooking
+        </p>
+
+    </div>
+
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="homeSearch"
+            placeholder="Search recipes..."
+        >
+
+        <button onclick="searchRecipes()">
+            🔍 Search
+        </button>
+
+    </div>
+
+
+    <div class="recipe-grid">
+
+        <div class="recipe-card">
+
+            <img src="images/biryani.jpg"
+                 alt="Biryani">
+
+            <div class="recipe-info">
+
+                <h3>Chicken Biryani</h3>
+
+                <p>Indian • Non-Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 60 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.8
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=biryani"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="recipe-card">
+
+            <img src="images/paneer.jpg"
+                 alt="Paneer">
+
+            <div class="recipe-info">
+
+                <h3>Paneer Butter Masala</h3>
+
+                <p>Indian • Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 40 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.7
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=paneer"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="recipe-card">
+
+            <img src="images/pasta.jpg"
+                 alt="Pasta">
+
+            <div class="recipe-info">
+
+                <h3>Creamy Pasta</h3>
+
+                <p>Italian • Vegetarian</p>
+
+                <div class="recipe-meta">
+
+                    <span>⏱ 30 min</span>
+
+                    <span class="rating">
+                        ⭐ 4.6
+                    </span>
+
+                </div>
+
+                <a href="recipe-details.html?recipe=pasta"
+                   class="recipe-btn">
+                    View Recipe
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-bottom">
+
+        <p>© 2026 RecipeHub</p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
